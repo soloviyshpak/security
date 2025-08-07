@@ -1,0 +1,66 @@
+/* Основные стили */
+body {
+  font-family: 'OpenSans', serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background-image: url('../img/flag.jpg');
+  background-size: cover;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* стили для header */
+.header {
+  padding-top: 50px;
+}
+
+.header__wrapper {
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+.header__logo-link {
+}
+.header__logo-img {
+  transition: scale 0.3s;
+}
+.header__logo-img:hover {
+  scale: 1.1;
+}
+.header__nav {
+}
+.header__nav-list {
+  display: flex;
+  column-gap: 35px;
+}
+.header__nav-item {
+  padding: 0 10px;
+  transition: background 0.3s;
+}
+.header__nav-link {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #8b8e94;
+  padding: 41px 0;
+}
+
+.header__nav-item:hover {
+  background: red;
+}
+
+.header__nav-item:hover .header__nav-link {
+  color: #fff;
+}
+
+.header__nav-link--active {
+  color: red;
+}

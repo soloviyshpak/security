@@ -1,0 +1,20 @@
+/* Arsenal */
+@font-face {
+  font-family: 'Arsenal';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Arsenal'), url('../fonts/Arsenal-Bold.woff2') format('woff2'),
+    url('../fonts/Arsenal-Bold.woff') format('woff'),
+    url('../fonts/Arsenal-Bold.eot') format('eot');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('OpenSans'), url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.eot') format('eot');
+  font-display: swap;
+}
