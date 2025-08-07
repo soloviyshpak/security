@@ -6,6 +6,8 @@ body {
   line-height: 24px;
   background-image: url('../img/flag.jpg');
   background-size: cover;
+  backdrop-filter: blur(10px);
+  color: #626c71;
 }
 
 .container {
@@ -13,6 +15,15 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: 'Arsenal', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #626c71;
+}
+.text {
+  text-indent: 20px;
+}
 /* стили для header */
 .header {
   padding-top: 50px;
@@ -25,6 +36,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
+  border: 1px solid #000;
+  opacity: 0.9;
 }
 .header__logo-link {
 }
@@ -43,6 +56,7 @@ body {
 .header__nav-item {
   padding: 0 10px;
   transition: background 0.3s;
+  display: flex;
 }
 .header__nav-link {
   display: block;
@@ -63,4 +77,60 @@ body {
 
 .header__nav-link--active {
   color: red;
+}
+
+/* Стили для основной секции */
+
+.main {
+  margin-top: 30px;
+}
+.main__wrapper {
+  background: #f1f7f9;
+  border-radius: 5px;
+  padding: 50px 100px 50px 120px;
+  border: 1px solid #000;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  max-width: 780px;
+}
+.info__title {
+  margin-bottom: 35px;
+}
+.info__text {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+/* Стили для сайд-бара */
+.news_widget {
+  background: #fff;
+  width: 315px;
+  padding: 20px 25px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.news_widget__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.news_widget__list {
+  display: block;
+}
+.news_widget__item {
+  border-bottom: 1px solid #eeeeef;
+  padding: 5px 0;
+}
+.news_widget__item:last-child {
+  border: none;
+}
+.news_widget__link {
+  color: #da3845;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.news_widget__link:hover {
+  color: #000;
 }
