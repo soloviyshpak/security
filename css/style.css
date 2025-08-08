@@ -165,3 +165,62 @@ body {
 .footer__btn:hover path {
   fill: #fafafa;
 }
+
+/* Стили для вкладки трудоустройства */
+.employment {
+}
+
+.employment__header {
+  text-align: center;
+  font-family: 'Arsenal';
+  font-weight: 700;
+  font-size: 24px;
+}
+.employment__organization {
+  color: #000;
+}
+.employment__departament {
+  color: #c00000;
+  margin-top: 30px;
+}
+.employment__title {
+  color: gray;
+  margin-top: 30px;
+}
+.employment__audience {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  margin-top: 30px;
+}
+.employment__conditions {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin: 30px 0;
+}
+.employment__list {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.employment__item {
+  color: #000;
+  margin-bottom: 10px;
+}
+.employment__item:last-child {
+  margin: 0;
+}
+.employment__info {
+  margin-top: 30px;
+  color: #000;
+}
+.employment__info-link {
+  color: #000;
+  font-weight: 700;
+}
+.employment__info-link:hover {
+  text-decoration: none;
+}
