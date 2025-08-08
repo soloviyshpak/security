@@ -6,8 +6,21 @@ body {
   line-height: 24px;
   background-image: url('../img/flag.jpg');
   background-size: cover;
-  backdrop-filter: blur(10px);
+  background-attachment: fixed;
   color: #626c71;
+}
+.fixed_wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  filter: none; /* Важно! */
+}
+.scroll_btn {
+  display: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: all 0.3s;
 }
 .container {
   width: 1440px;
@@ -66,6 +79,36 @@ body {
   padding: 0 10px;
   transition: background 0.3s;
   display: flex;
+}
+.header__nav-menu {
+  display: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  background: none;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 15px 50px;
+  transition: all 0.3s;
+  position: relative;
+  margin: 0 auto;
+}
+.header__nav-menu::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url('../img/icons/burger-menu.svg');
+  position: absolute;
+  top: 49%;
+  left: 22px;
+  transform: translateY(-50%);
+}
+.header__nav-menu--active {
+  background: red;
+  color: #fff;
+  box-shadow: 5px 0px 17px 12px rgba(34, 60, 80, 0.2) inset;
 }
 .header__nav-link {
   display: block;
@@ -401,4 +444,195 @@ body {
   justify-content: end;
   align-items: center;
   column-gap: 5px;
+}
+
+/* Медиа-запросы для адаптива */
+
+/* 1480 */
+@media (max-width: 1480px) {
+  .container {
+    width: 1300px;
+  }
+  .header__nav-link {
+    font-size: 16px;
+  }
+  .news_widget {
+    top: 60px;
+    right: 16px;
+  }
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+/* 1330 */
+@media (max-width: 1330px) {
+  .container {
+    width: 1100px;
+  }
+  .title {
+    text-align: center;
+  }
+
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .news_widget {
+    width: 80%;
+    position: static;
+    margin-bottom: 30px;
+  }
+  .main__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 50px 100px;
+  }
+
+  .info {
+    text-align: center;
+  }
+  .info__text {
+    width: 100%;
+  }
+
+  .news__card-title {
+    font-size: 18px;
+  }
+  .news__card-description {
+    font-size: 14px;
+  }
+
+  .feedback-container {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .feedback__form {
+    width: 568px;
+  }
+
+  .post__img {
+    width: 80%;
+  }
+}
+
+/* 1140 */
+@media (max-width: 1140px) {
+  .container {
+    width: 950px;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    padding: 15px 40px;
+  }
+  .header__nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  .header__nav-list--active {
+    display: flex;
+  }
+  .header__nav-menu {
+    display: block;
+  }
+  .header__nav-item {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .header__nav-link {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+}
+
+/* 985 */
+@media (max-width: 985px) {
+  body {
+    line-height: 1.6;
+  }
+  .container {
+    width: 800px;
+  }
+}
+
+/* 830 */
+@media (max-width: 830px) {
+  .container {
+    width: 700px;
+  }
+  .scroll_btn {
+    position: absolute;
+    bottom: 55px;
+    right: 30px;
+  }
+  .scroll_btn--active {
+    display: block;
+  }
+  .footer__btn {
+    display: none;
+  }
+}
+
+/* 730 */
+@media (max-width: 730px) {
+  .container {
+    width: 550px;
+  }
+  .main__wrapper {
+    padding: 50px 40px;
+  }
+  .feedback__form {
+    width: 470px;
+  }
+  .feedback__map {
+    width: 470px;
+  }
+}
+
+/* 585 */
+@media (max-width: 585px) {
+  .container {
+    width: 480px;
+  }
+  .title {
+    font-size: 35px;
+  }
+
+  .post__img {
+    width: 100%;
+  }
+
+  .feedback__form {
+    width: 350px;
+  }
+  .feedback__map {
+    width: 350px;
+  }
+  .feedback-contacts {
+    font-size: 28px;
+  }
+}
+
+/* 510 */
+@media (max-width: 510px) {
+  .container {
+    width: 360px;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .feedback__form {
+    width: 300px;
+  }
+  .feedback__map {
+    width: 300px;
+  }
 }
