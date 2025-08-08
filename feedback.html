@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Обратная связь — Коломенский отдел вневедомственной охраны</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo-link"
+            ><img src="img/logo.png" alt="Герб РФ" class="header__logo-img"
+          /></a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="index.html" class="header__nav-link">Главная</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="employment.html" class="header__nav-link"
+                  >Трудоустройство</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a href="agitation.html" class="header__nav-link">Агитработа</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="life.html" class="header__nav-link">Жизнь отдела</a>
+              </li>
+              <li class="header__nav-item">
+                <a
+                  href="feedback.html"
+                  class="header__nav-link header__nav-link--active"
+                  >Обратная связь</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__wrapper">
+          <section class="feedback">
+            <h1 class="feedback__title title">Обратная связь</h1>
+            <div class="feedback-container">
+              <form action="" class="feedback__form">
+                <h3 class="feedback__form-title">Напишите нам!</h3>
+                <!-- Поле для ввода имени -->
+                <label
+                  for="username"
+                  class="feedback__label feedback__label--requared"
+                  placeholder="Иван Иванов"
+                  >Имя</label
+                >
+                <input
+                  type="text"
+                  id="username"
+                  class="feedback__input"
+                  required
+                />
+                <!-- Поле для ввода E-Mail -->
+                <label
+                  for="email"
+                  class="feedback__label feedback__label--requared"
+                  placeholder="mail@example.com"
+                  >E-Mail</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="feedback__input"
+                  pattern=".+@example\.com"
+                  required
+                />
+                <!-- Поле для ввода темы -->
+                <label
+                  for="theme"
+                  class="feedback__label feedback__label--requared"
+                  placeholder=""
+                  >Тема</label
+                >
+                <input
+                  type="text"
+                  id="theme"
+                  class="feedback__input"
+                  required
+                />
+                <!-- Поле для ввода сообщения -->
+                <label
+                  for="message"
+                  class="feedback__label feedback__label--requared"
+                  placeholder=""
+                  >Сообщение</label
+                >
+                <textarea
+                  id="message"
+                  class="feedback__textarea"
+                  rows="10"
+                  required
+                ></textarea>
+
+                <!-- Кнопка для отправки формы -->
+                <button class="feedback__btn" type="submit">Отправить</button>
+              </form>
+              <div
+                style="position: relative; overflow: hidden"
+                class="feedback__map"
+              >
+                <a
+                  href="https://yandex.com/maps/10734/kolomna/?utm_medium=mapframe&utm_source=maps"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 0px;
+                  "
+                  >Коломна</a
+                ><a
+                  href="https://yandex.com/maps/10734/kolomna/house/ulitsa_yana_grunta_1a/Z0EYcQFiSkwDQFtvfX1xcnlqYQ==/?ll=38.762488%2C55.103559&utm_medium=mapframe&utm_source=maps&z=18.03"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 14px;
+                  "
+                  >Улица Яна Грунта, 1А — Яндекс Карты</a
+                ><iframe
+                  src="https://yandex.com/map-widget/v1/?ll=38.762488%2C55.103559&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjkwODM1NBJm0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JrQvtC70L7QvNC90LAsINGD0LvQuNGG0LAg0K_QvdCwINCT0YDRg9C90YLQsCwgMdCQIgoNsQwbQhUValxC&z=18.03"
+                  width="600"
+                  height="544"
+                  frameborder="1"
+                  allowfullscreen="true"
+                  style="position: relative"
+                ></iframe>
+              </div>
+            </div>
+            <div class="feedback-contacts">
+              <p>
+                Наш адрес: Адрес: 140400г. Коломнаул. Яна Грунта, д. 1а
+                (напротив авторынка)
+              </p>
+              <p>
+                Электронная почта:
+                <a
+                  href="mailto:ovo_kolomna@mail.ru"
+                  class="feedback-contacts__link"
+                  >ovo_kolomna@mail.ru</a
+                >
+              </p>
+              <p>
+                Телефон:
+                <a href="tel:+74966128113" class="feedback-contacts__link"
+                  >+7 496 612-81-13</a
+                >
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <p>
+              Коломенский ОВО - Филиал ФГКУ "УВО ВНГ России по Московской
+              области"
+            </p>
+            <address>
+              Контакты: Адрес: 140400г. Коломнаул. Яна Грунта, д. 1а (напротив
+              авторынка) <br />
+              Электронная почта:
+              <a href="mailto:ovo_kolomna@mail.ru" class="footer__info-link"
+                >ovo_kolomna@mail.ru</a
+              >
+              <br />
+              Телефон:
+              <a href="tel:+74966128113" class="footer__info-link"
+                >+7 496 612-81-13</a
+              >
+            </address>
+          </div>
+          <button class="footer__btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              enable-background="new 0 0 32 32"
+              height="64px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="64px"
+              xml:space="preserve"
+            >
+              <path
+                d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0  l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585  c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z"
+                fill="#515151"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</html>

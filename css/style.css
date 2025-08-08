@@ -20,6 +20,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   color: #626c71;
+  margin-bottom: 35px;
 }
 .text {
   text-indent: 20px;
@@ -95,9 +96,6 @@ body {
 .info {
   max-width: 780px;
 }
-.info__title {
-  margin-bottom: 35px;
-}
 .info__text {
   margin-top: 15px;
   text-align: justify;
@@ -167,9 +165,6 @@ body {
 }
 
 /* Стили для вкладки трудоустройства */
-.employment {
-}
-
 .employment__header {
   text-align: center;
   font-family: 'Arsenal';
@@ -225,12 +220,92 @@ body {
   text-decoration: none;
 }
 
-/* Стили для галерей "Агитация" и "Жизнь отдела" */
-.gallery__title {
-  margin-bottom: 35px;
-}
+/* Стили для галерей "Агитработа" и "Жизнь отдела" */
 .gallery-element {
   max-width: 300px;
   height: 225px;
   object-fit: cover;
+}
+
+/* Стили для вкладки "Обратная связь" */
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px 15px;
+  width: 430px;
+}
+.feedback__form-title {
+  font-family: 'Arsenal', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+.feedback__label {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.feedback__input {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+  height: 24px;
+  padding: 0 5px;
+  color: #000;
+}
+.feedback__label--requared::after {
+  content: ' *';
+  color: #ff0000;
+}
+.feedback__textarea {
+  margin-bottom: 15px;
+  resize: vertical;
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 5px;
+  color: #000;
+}
+.feedback__btn {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 5px;
+  color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+.feedback__btn:hover {
+  scale: 1.05;
+}
+.feedback__map {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.feedback-contacts {
+  font-family: 'Arsenal', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.6;
+  margin-top: 30px;
+  text-align: center;
+  color: #000;
+}
+.feedback-contacts__link {
+  color: #000;
+  text-decoration: none;
 }
