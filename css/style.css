@@ -636,3 +636,19 @@ body {
     width: 300px;
   }
 }
+
+/* 400 */
+@media (max-width: 400px) {
+  .container {
+    width: 320px;
+  }
+  .feedback__form {
+    width: 250px;
+  }
+  .feedback__map {
+    width: 250px;
+  }
+  .feedback-contacts {
+    font-size: 20px;
+  }
+}
