@@ -28,6 +28,15 @@ body {
 .header {
   padding-top: 50px;
 }
+.header--scrolled {
+  background: #fff;
+  padding: 0;
+  border: 1px solid #000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 .header__wrapper {
   background: #fff;
   border-radius: 5px;
@@ -37,6 +46,11 @@ body {
   padding: 0px 40px;
   border: 1px solid #000;
   opacity: 0.9;
+}
+.header__wrapper--scrolled {
+  border-radius: 0px;
+  border: none;
+  opacity: 1;
 }
 .header__logo-img {
   transition: scale 0.3s;
