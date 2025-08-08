@@ -4,3 +4,7 @@ footerScrollUp.on('click', (e) => {
   e.preventDefault();
   $('html, body').animate({ scrollTop: 0 }, 'smooth');
 });
+
+Fancybox.bind('[data-fancybox]', {
+  // Your custom options
+});

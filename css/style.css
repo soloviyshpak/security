@@ -224,3 +224,11 @@ body {
 .employment__info-link:hover {
   text-decoration: none;
 }
+
+/* Стили для галерей "Агитация" и "Жизнь отдела" */
+.gallery__title {
+  margin-bottom: 35px;
+}
+.gallery-element {
+  max-width: 300px;
+}
