@@ -9,12 +9,10 @@ body {
   backdrop-filter: blur(10px);
   color: #626c71;
 }
-
 .container {
   width: 1440px;
   margin: 0 auto;
 }
-
 .title {
   font-family: 'Arsenal', serif;
   font-weight: 700;
@@ -25,11 +23,11 @@ body {
 .text {
   text-indent: 20px;
 }
+
 /* стили для header */
 .header {
   padding-top: 50px;
 }
-
 .header__wrapper {
   background: #fff;
   border-radius: 5px;
@@ -40,15 +38,11 @@ body {
   border: 1px solid #000;
   opacity: 0.9;
 }
-.header__logo-link {
-}
 .header__logo-img {
   transition: scale 0.3s;
 }
 .header__logo-img:hover {
   scale: 1.1;
-}
-.header__nav {
 }
 .header__nav-list {
   display: flex;
@@ -67,21 +61,17 @@ body {
   color: #8b8e94;
   padding: 41px 0;
 }
-
 .header__nav-item:hover {
   background: red;
 }
-
 .header__nav-item:hover .header__nav-link {
   color: #fff;
 }
-
 .header__nav-link--active {
   color: red;
 }
 
 /* Стили для основной секции */
-
 .main {
   margin-top: 30px;
 }
@@ -162,7 +152,6 @@ body {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .footer__btn:hover path {
   fill: #fafafa;
 }
@@ -298,7 +287,6 @@ body {
   border: 1px solid #000;
   border-radius: 5px;
 }
-
 .feedback-contacts {
   font-family: 'Arsenal', serif;
   font-weight: 700;
@@ -314,10 +302,6 @@ body {
 }
 
 /* Стили для страницы со спиком новостей */
-.news {
-}
-.news__title {
-}
 .news__list {
   display: flex;
   justify-content: center;
@@ -373,7 +357,34 @@ body {
   align-items: center;
   column-gap: 5px;
 }
-
 .news__card-watched p {
   color: #808080;
+}
+
+/* Стили постов */
+.post__img {
+  display: block;
+  width: 1100px;
+  margin: 0 auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.post__text {
+  margin-top: 35px;
+  font-family: 'OpenSans', serif;
+  font-weight: 400;
+  color: #000;
+  text-indent: 20px;
+}
+.post__text p {
+  margin-bottom: 10px;
+}
+.post__text p:last-child {
+  margin: 0;
+}
+.post__watched {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 5px;
 }
