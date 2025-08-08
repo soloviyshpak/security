@@ -113,8 +113,10 @@ body {
   right: 60px;
 }
 .news_widget__title {
+  display: block;
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 .news_widget__list {
   display: block;
@@ -138,6 +140,7 @@ body {
 /* Стили для footer */
 .footer {
   margin-top: 30px;
+  padding-bottom: 50px;
 }
 .footer__wrapper {
   background: #3e4145;
@@ -308,4 +311,69 @@ body {
 .feedback-contacts__link {
   color: #000;
   text-decoration: none;
+}
+
+/* Стили для страницы со спиком новостей */
+.news {
+}
+.news__title {
+}
+.news__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.news__card {
+  max-width: 300px;
+}
+.news__card-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.news__card-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.news__card-img {
+  display: block;
+  max-width: 300px;
+  height: 225px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.news__card-content {
+  background: #fafafa;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 15px;
+}
+.news__card-title {
+  font-family: 'Arsenal', serif;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.news__card-description {
+  font-family: 'OpenSans', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.news__card-watched {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.news__card-watched p {
+  color: #808080;
 }
